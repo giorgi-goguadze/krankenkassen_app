@@ -5,11 +5,11 @@ import streamlit as st
 from langchain_groq import ChatGroq
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import PydanticOutputParser
-from dotenv import load_dotenv, find_dotenv
+
 from pydantic import BaseModel, Field
 from enum import Enum
 from pprint import pprint
-load_dotenv(find_dotenv())
+
 from pathlib import Path
  
 os.getcwd()
