@@ -57,7 +57,7 @@ user_input = st.text_area(label="Emailinhalt", placeholder="Hier können Sie Ihr
  
 if user_input:
     res = chain.invoke({"email_content": user_input})
-    str.write("Ergebnis:")
+    st.write("Ergebnis:")
     st.write(str(res.category))
     st.write(str(res.complexity))
  #%%
